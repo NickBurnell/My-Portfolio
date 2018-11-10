@@ -45,5 +45,5 @@ app.get('/send', function (req, res) {
 });
 /*--------------------Routing Over----------------------------*/
 
-let port = 5050;
+let port = process.env.PORT || 5050;
 app.listen(port, () => console.log(`App is listening on port ${port}`));
